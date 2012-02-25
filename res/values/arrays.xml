@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="pick_class">
+        <item>G 10</item>
+        <item>G 11</item>
+        <item>G 12</item>
+        <item>G 13</item>
+        <item>G 14</item>
+        <item>G 15</item>
+        <item>G 16</item>
+        <item>G 17</item>
+        <item>G 18</item>
+        <item>G 19</item>
+        <item>J 10</item>
+        <item>J 11</item>
+        <item>J 12</item>
+        <item>J 13</item>
+        <item>J 14</item>
+        <item>J 15</item>
+        <item>J 16</item>
+        <item>J 17</item>
+        <item>J 18</item>
+        <item>J 19</item>
+    </string-array>
+    
+    <string-array name="pick_event">
+        <item>Høyde</item>
+        <item>Høyde uten tilløp</item>
+        <item>Stav</item>
+        <item>Lengde</item>
+        <item>Lengde uten tilløp</item>
+        <item>Tresteg</item>
+        <item>Kule</item>
+        <item>Diskos</item>
+        <item>Slegge</item>
+        <item>Spyd</item>
+        <item>Liten ball</item>
+        <item>Slengball</item>
+        <item>40 m</item>
+        <item>60 m</item>
+        <item>80 m</item>
+        <item>100 m</item>
+        <item>200 m</item>
+        <item>300 m</item>
+        <item>400 m</item>
+        <item>600 m</item>
+        <item>800 m</item>
+        <item>1000 m</item>
+        <item>1500 m</item>
+        <item>2000 m</item>
+        <item>3000 m</item>
+        <item>5000 m</item>
+        <item>10000 m</item>
+        <item>60 m hekk</item>
+        <item>80 m hekk</item>
+        <item>100 m hekk</item>
+        <item>110 m hekk (100.0cm)</item>
+        <item>110 m hekk (106.7cm)</item>
+        <item>200 m hekk</item>
+        <item>300 m hekk</item>
+        <item>400 m hekk</item>
+        <item>1500 m hinder</item>
+        <item>2000 m hinder</item>
+        <item>3000 m hinder</item>
+        <item>1000 m kappgang</item>
+        <item>2000 m kappgang</item>
+        <item>3000 m kappgang</item>
+        <item>4000 m kappgang</item>
+        <item>5000 m kappgang</item>
+        <item>10000 m kappgang</item>
+        <item>20000 m kappgang</item>
+    </string-array>
+    
+</resources>

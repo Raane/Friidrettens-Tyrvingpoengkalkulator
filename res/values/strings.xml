@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Friidrettens Tyrvingpoengkalkulator</string>
+    <string name="app_name">Friidrettens Tyrvingpoengkalkulator</string>
+    <string name="class_prompt">Velg klasse</string>
+    <string name="event_prompt">Velg øvelse</string>
+    <string name="pick_header">Velg klasse og øvelse</string>
+    <string name="result_header">Skriv inn resultatet</string>
+    <string name="result_output">0 Tyrvingpoeng</string>
+    <string name="input_guide">Bruk \&quot;,\&quot; som skilletegn. \n f.eks. 1,05,23 = 1 min 5 sek og 23 hundredeler</string>
+</resources>

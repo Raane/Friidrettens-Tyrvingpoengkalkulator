@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView 
+    	android:textAppearance="?android:attr/textAppearanceLarge" 
+    	android:id="@+id/header1" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/pick_header" 
+    	android:gravity="center" android:layout_gravity="center">
+    	</TextView>
+	<LinearLayout 
+	    android:id="@+id/LinearLayout02" 
+	    android:layout_height="wrap_content" 
+	    android:layout_width="fill_parent" 
+	    android:layout_alignParentBottom="true">
+	    <Spinner 
+	        android:id="@+id/spinner_class"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="true"
+	        android:prompt="@string/class_prompt"
+	    />
+	    <Spinner 
+	        android:id="@+id/spinner_event"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="true"
+	        android:prompt="@string/event_prompt"
+	    />
+</LinearLayout>
+	<TextView 
+		android:textAppearance="?android:attr/textAppearanceLarge" 
+		android:id="@+id/header2" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center" 
+		android:text="@string/result_header">
+	</TextView>
+	<TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="@string/input_guide" android:gravity="center"></TextView>
+	<EditText 
+		android:id="@+id/input_result" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content" 
+		android:singleLine="True"
+		android:autoText="False"
+		android:inputType="textNoSuggestions">
+		</EditText>
+	<TextView 
+		android:textSize="30dp"
+		android:id="@+id/result_output" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center|bottom" 
+		android:text="@string/result_output">
+	</TextView>
+	<TextView 
+		android:textSize="18dp"
+		android:id="@+id/result_string_output" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center|bottom" 
+		android:text="@string/result_output">
+	</TextView>
+</LinearLayout>
