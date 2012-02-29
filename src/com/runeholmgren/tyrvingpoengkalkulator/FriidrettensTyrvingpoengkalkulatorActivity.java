@@ -1,14 +1,18 @@
 package com.runeholmgren.tyrvingpoengkalkulator;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Display;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +26,23 @@ public class FriidrettensTyrvingpoengkalkulatorActivity extends Activity {
 	TextView result_output;
 	TextView result_string_output;
 	Calculator calculator = new Calculator();
+	FrameLayout buttonFrame;
+	LinearLayout mainlinearlayout;
+	RelativeLayout relativeLayout;
+	Display display;
+	Button button0;
+	Button button1;
+	Button button2;
+	Button button3;
+	Button button4;
+	Button button5;
+	Button button6;
+	Button button7;
+	Button button8;
+	Button button9;
+	Button button_comma;
+	Button button_help;
+	
 	TyrvingConstants tyrving_constants = new TyrvingConstants();
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,6 +52,7 @@ public class FriidrettensTyrvingpoengkalkulatorActivity extends Activity {
         
         input_result = (EditText) findViewById(R.id.input_result);
         input_result.setHint("Skriv inn resultatet");
+        input_result.setFocusable(false);
         
         spinner_class = (Spinner) findViewById(R.id.spinner_class);
         ArrayAdapter adapter_class = ArrayAdapter.createFromResource(
@@ -45,8 +67,68 @@ public class FriidrettensTyrvingpoengkalkulatorActivity extends Activity {
         spinner_event.setAdapter(adapter_event);
         
         result_output = (TextView)findViewById(R.id.result_output);
-        
         result_string_output = (TextView)findViewById(R.id.result_string_output);
+        
+        buttonFrame = (FrameLayout)findViewById(R.id.frameLayout1);
+        mainlinearlayout = (LinearLayout)findViewById(R.id.mainlinearlayout);
+        display = getWindowManager().getDefaultDisplay();
+        relativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout1);
+        
+        button1 = (Button)findViewById(R.id.button8);
+        button2 = (Button)findViewById(R.id.button4);
+        button3 = (Button)findViewById(R.id.button13);
+        button4 = (Button)findViewById(R.id.button7);
+        button5 = (Button)findViewById(R.id.button3);
+        button6 = (Button)findViewById(R.id.button12);
+        button7 = (Button)findViewById(R.id.button6);
+        button8 = (Button)findViewById(R.id.button2);
+        button9 = (Button)findViewById(R.id.button11);
+        button0 = (Button)findViewById(R.id.button1);
+        button_comma = (Button)findViewById(R.id.button9);
+        button_help = (Button)findViewById(R.id.button5);
+        
+        button0.setText("0");
+        button1.setText("1");
+        button2.setText("2");
+        button3.setText("3");
+        button4.setText("4");
+        button5.setText("5");
+        button6.setText("6");
+        button7.setText("7");
+        button8.setText("8");
+        button9.setText("9");
+        button_comma.setText(",");
+        button_help.setText("backspace");
+        
+        int buttonWidth = display.getWidth()/3;
+        int buttonHeight = buttonFrame.getHeight();
+        
+        //button1.setText();
+        
+        button0.setWidth(buttonWidth);
+        button0.setHeight(buttonHeight);
+        button1.setWidth(buttonWidth);
+        button1.setHeight(buttonHeight);
+        button2.setWidth(buttonWidth);
+        button2.setHeight(buttonHeight);
+        button3.setWidth(buttonWidth);
+        button3.setHeight(buttonHeight);
+        button4.setWidth(buttonWidth);
+        button4.setHeight(buttonHeight);        
+        button5.setWidth(buttonWidth);
+        button5.setHeight(buttonHeight);
+        button6.setWidth(buttonWidth);
+        button6.setHeight(buttonHeight);
+        button7.setWidth(buttonWidth);
+        button7.setHeight(buttonHeight);
+        button8.setWidth(buttonWidth);
+        button8.setHeight(buttonHeight);
+        button9.setWidth(buttonWidth);
+        button9.setHeight(buttonHeight);
+        button_comma.setWidth(buttonWidth);
+        button_comma.setHeight(buttonHeight);
+        button_help.setWidth(buttonWidth);
+        button_help.setHeight(buttonHeight);
         
         loadConstants();
 
@@ -78,7 +160,82 @@ public class FriidrettensTyrvingpoengkalkulatorActivity extends Activity {
 					int count) {
 			}
         });
-        
+        button0.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"0");
+			}
+		});
+        button1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"1");
+			}
+		});
+        button2.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"2");
+			}
+		});
+        button3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"3");
+			}
+		});
+        button4.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"4");
+			}
+		});
+        button5.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"5");
+			}
+		});
+        button6.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"6");
+			}
+		});
+        button7.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"7");
+			}
+		});
+        button8.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"8");
+			}
+		});
+        button9.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+"9");
+			}
+		});
+        button_comma.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				input_result.setText(input_result.getText()+",");
+			}
+		});
+        button_help.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String temp_input = "";
+				for(int i=0;i<input_result.getText().length()-1;i++){
+					temp_input += input_result.getText().charAt(i);
+				}
+				input_result.setText(temp_input);
+			}
+		});
         
         //ArrayAdapter adapter_class2 = ArrayAdapter.createFromResource(
         //        this, R.array.pick_class, android.R.layout.simple_spinner_item);
