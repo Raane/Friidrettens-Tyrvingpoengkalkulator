@@ -84,7 +84,7 @@ public class Calculator {
 		} else {
 			p = 1000-o*i;
 		}
-		int score = (int)(Math.floor(p));
+		int score = (int)(Math.floor(p+0.000001));
 		if(score<0)	return 0;
 		else return score;
 	}
